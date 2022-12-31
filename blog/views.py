@@ -51,3 +51,8 @@ def map(request):
     context = {}
     
     return render(request, 'map.html', context=context)
+
+
+def graph(request):
+
+    return render(request, 'graph.html', context={'text': 'Hello world'})

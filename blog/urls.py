@@ -11,4 +11,6 @@ urlpatterns = [
     #path("<slug:slug>/", views.post_detail, name="post_detail"),
 
     path("map/", views.map, name="map"),
+
+    path("graph/", views.graph)
 ]

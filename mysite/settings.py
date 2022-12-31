@@ -40,6 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'whitenoise.runserver_nostatic',  
     "django.contrib.sitemaps",
+
+    'channels',
+
     'debug_toolbar',
     "blog",
     "crispy_forms",
@@ -86,6 +89,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = "mysite.wsgi.application"
+ASGI_APPLICATION = 'mysite.asgi.application'
 
 
 # Database
