@@ -19,7 +19,7 @@ var graphData = {
 var myChart = new Chart(ctx, graphData);
 
 //var socket = new WebSocket('ws://localhost:8000/ws/graph/');
-var socket = new WebSocket('ws://womeninvienna.com/ws/graph/');
+var socket = new WebSocket('https://womeninvienna.com/ws/graph/');
 
 socket.onmessage = function(e){
     var djangoData = JSON.parse(e.data);
