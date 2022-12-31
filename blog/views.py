@@ -45,3 +45,9 @@ def post_detail(request, slug):
             "comment_form": comment_form,
         },
     )
+
+
+def map(request):
+    context = {}
+    
+    return render(request, 'map.html', context=context)
